@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Post Request Received</h1>
+    <div>
+        <p>This is a list of query sent by url </p>
+        <ul>
+            <% Object.keys(qdata).forEach(function(data) { %>
+                <li>    <%= data %> :
+                    <%- qdata[data] %>
+                </li>
+                <% }); %>
+            </ul>   
+        </div>
+        <div>
+            <p>This is a list of information sent by post request body </p>
+            <ul>
+                <% Object.keys(bdata).forEach(function(data) { %>
+                    <li>    <%= data %> :
+                        <%- bdata[data] %>
+                    </li>
+                    <% }); %>
+                </ul>   
+            </div>
+            
+        </body>
+        </html>

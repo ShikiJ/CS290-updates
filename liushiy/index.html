@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the home page of the test</h1>
+    <h2> this is a get submit</h2>
+    <div class="get">
+        <form action="/test" method="GET" class =get>
+            <br>
+        <lable>Enter your Name</lable>
+            <br>
+        <input type="text" name="who">
+        <br>
+        <lable>Your date of birth</lable>
+        <br>
+        <input type="text" name="dob">
+        <br>
+        <lable>Your social security number</lable>
+        <br>
+        <input type="text" name="social">
+        <br>
+        <input type="submit" value="getMe ">
+        </form>
+        <h2> this is a post submit</h2>
+        
+        <div class="post">
+            <form action="/test?id=me&reason=silly&class=unorganized" method="POST" class ="post">
+                <br>
+            <lable>Enter your home address</lable>
+                <br>
+            <input type="text" name="address">
+            <br>
+            <lable>Your phone number</lable>
+            <br>
+            <input type="text" name="phone">
+            <br>
+            <lable>Your debit card number</lable>
+            <br>
+            <input type="text" name="card">
+            <br>
+            <input type="submit" value="postMe ">
+            </form>
+        
+    </div>
+  
+</body>
+</html>

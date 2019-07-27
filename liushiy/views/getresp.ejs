@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Get Request Received</h1>
+    <div class ="getrequest">
+        <p>parameter names and values which were sent in the URL query string for GET</p>
+        <!-- <p><%= getdata %></p> -->
+        <div>
+            <p>This is a list of query sent by url </p>
+            <ul>
+            <% Object.keys(getdata).forEach(function(data) { %>
+                <li>    <%= data %> :
+                    <%- getdata[data] %>
+                </li>
+                <% }); %>
+            </ul>   
+            </div>
+            
+        </div>
+        
+    </body>
+    </html>
